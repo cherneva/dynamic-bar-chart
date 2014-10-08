@@ -1,4 +1,4 @@
-dynamic-bar-chart
+Bar Chart build with Raphael JS
 =================
 
 Bar chart created using RaphaelJS
