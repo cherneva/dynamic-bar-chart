@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Dynamic Web Chart</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	
+</head>
+<body>
+    <div id="main">
+        <h1>"Happy Cow" Farm Shop <i>Annual Chart</i> </h1>
+        <section>
+        	<h2>Please enter the amount of fruits/veggies in kgs</h2>
+	        <form method="post" id="chartData" >
+	        	<fieldset id="fruits">
+	        		<legend>Fruits</legend>
+		        	<!-- fruits -->
+		        	<label for="fruits-q1">Frist Quater</label><input type="number" class="order" id="fruits-q1" value="500"> 
+		        	<label for="fruits-q2">Second Quater</label><input type="number" class="order" id="fruits-q2" value="700">
+		        	<label for="fruits-q3">Third Quater</label><input type="number" class="order" id="fruits-q3" value="800">
+	        		<label for="fruits-q4">Fourth Quater</label><input type="number" class="order" id="fruits-q4" value="300">
+	        	</fieldset>
+	        	<fieldset id="veggies">
+	        		<legend>Veggies</legend>
+		        	<!-- veggies -->
+		        	<label for="veggies-q1">Frist Quater</label><input type="number" class="item" id="veggies-q1" value="5990">
+		        	<label for="veggies-q2">Second Quater</label><input type="number" class="item" id="veggies-q2" value="5870">
+		        	<label for="veggies-q3">Third Quater</label><input type="number" class="item" id="veggies-q3" value="6575">
+		        	<label for="veggies-q4">Fourth Quater</label><input type="number" class="item" id="veggies-q4" value="5650">
+		        </fieldset>
+		        <button type="submit">Submit</button>
+	        </form>
+	    </section>   
+        <section>	
+			<div id="holder">
+				<!-- here comes the graph -->
+			</div>
+            <ul id="legend">
+                <li>Fruits</li>
+                <li>Veggies</li>
+            </ul>
+        </section>
+    </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/raphael-min.js"></script>  
+    <script src="js/g.raphael-min.js "></script> 
+    <script src="js/g.bar-min.js"></script>
+    <script src="js/script.js"></script>   
+
+</body>
+
+</html>
